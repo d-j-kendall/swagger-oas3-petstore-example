@@ -18,7 +18,26 @@ paths:
   /pet:
     post:
     put:
+  /pet/{id}:
     get:
     delete:
   /pet/findByStatus:
     get:
+  /store/order:
+    post:
+    get:
+  /store/order/{id}:
+    get:
+    delete:
+  /user:
+    post:
+    put:
+  /user/{id}:
+    get:
+    delete:
+  /user/login:
+    get:
+  /user/logout:
+    get:
+
+
