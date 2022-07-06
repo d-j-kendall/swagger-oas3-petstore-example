@@ -29,6 +29,17 @@ paths:
     post:
       tags:
       - pet
+      summary: Add a new pet to the petstore #
+      description: '' # These descriptions are mostly implicit, but for more complex operations or specific business logic - more details can be added here
+      operationId: addPet # Operation id should be unique
+      responses:
+        '405':
+          description: Invalid input # These are not exhaustive, as http request pass through many layers that devs do not have control over.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
     put:
       tags:
       - pet
