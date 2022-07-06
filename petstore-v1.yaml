@@ -14,30 +14,70 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
 
+tags:
+  - name: pet
+    description: The pet api resource, everthing you need to interact with this data
+    externalDocs:
+      description: Here are the external docs for the pet api (business logic, use cases, edge cases )
+      url: jira.confluence.com/petexample_documentation
+  - name: store
+    description: Access to the store api. Users can place orders, administrators can manage orders
+  - name: user
+    description: User api. Create and manage users within the applicaiton
 paths:
   /pet:
     post:
+      tags:
+      - pet
     put:
+      tags:
+      - pet
   /pet/{id}:
     get:
+      tags:
+      - pet
     delete:
+      tags:
+      - pet
   /pet/findByStatus:
     get:
+      tags:
+      - pet
   /store/order:
     post:
+      tags:
+      - store
     get:
+      tags:
+      - store
   /store/order/{id}:
     get:
+      tags:
+      - store
     delete:
+      tags:
+      - store
   /user:
     post:
+      tags:
+      - user
     put:
+      tags:
+      - user
   /user/{id}:
     get:
+      tags:
+      - user
     delete:
+      tags:
+      - user
   /user/login:
     get:
+      tags:
+      - user
   /user/logout:
     get:
+      tags:
+      - user
 
 
