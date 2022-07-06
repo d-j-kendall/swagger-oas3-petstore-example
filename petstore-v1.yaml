@@ -20,3 +20,5 @@ paths:
     put:
     get:
     delete:
+  /pet/findByStatus:
+    get:
